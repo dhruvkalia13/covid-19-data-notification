@@ -6,6 +6,7 @@ import time
 from win10toast import ToastNotifier
 
 def job():
+    print("Notification incoming (every 15 minutes)...")
     conn = http.client.HTTPSConnection("coronavirus-19-api.herokuapp.com")
     payload = ''
     headers = {}
